@@ -153,7 +153,7 @@ func main(){
 		port="12345"
 	}
 
-	http.ListenAndServe(":"+port,nil)
+	http.ListenAndServe("0.0.0.0:"+port,nil)
 }
 
 
