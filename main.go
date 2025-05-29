@@ -148,7 +148,7 @@ func main(){
 	fmt.Println("Chat con websocket iniciado en http://localhost:12345")
 	go manager.start()
 	http.HandleFunc("/ws",wsPage)
-	port:=os.Getenv("port")
+	port:=os.Getenv("PORT")
 	if port==""{
 		port="12345"
 	}
