@@ -107,6 +107,7 @@ func (c *Client) read() {
 				continue
 			}
 			manager.send(firstMessage, c)
+			log.Printf("Usuario %s identificado (ID: %s)", c.username, c.id)
 			continue
 		}
 
